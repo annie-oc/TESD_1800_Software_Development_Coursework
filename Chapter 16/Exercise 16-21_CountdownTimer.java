@@ -3,7 +3,7 @@
 
 import javafx.application.Application;
 import javafx.stage.Stage;
-import javafx.scene.Scne;
+import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Label;
