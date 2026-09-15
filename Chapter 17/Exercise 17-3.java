@@ -88,7 +88,7 @@ public class Exercise17_03 {
                 int number = input.readInt();
 
                 // add the integer to the sum
-                sume += number;
+                sum += number;
             }
         } catch (EOFException ex) {
 
