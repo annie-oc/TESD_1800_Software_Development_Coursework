@@ -20,3 +20,6 @@
 ## I have been using JUnit4 to test the code
 
 ## My professor, Jason Adams, instructed me after I built the initial code on how to fix some bugs.
+
+<img width="653" height="450" alt="Screenshot 2026-09-21 at 12 57 23 PM" src="https://github.com/user-attachments/assets/635963bb-1138-44b4-bd99-e848ebd9801d" />
+
