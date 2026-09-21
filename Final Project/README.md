@@ -1,18 +1,22 @@
-## Getting Started
+# My Personal Library
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## This project helps avid readers keep track of their book collection. Who is currently borrowing the book and which books are back on their shelf.
 
-## Folder Structure
+## I built this code because as an avid reader myself I find it difficult to remember who of my friends I lent my books to. If they are in the system as 'checked in' then I know I've simply just misplaced the book and it is not in use.
 
-The workspace contains two folders by default, where:
+## I am especially proud of this section of the code:
+      // tell the buttons what to do when they're clicked
+      btAddBook.setOnAction(e -> handleBook()); // add the typed book to the list
+      btAddBorrower.setOnAction(e -> handleAddBorrower()); // add the typed person to the list
+      btOUT.setOnAction(e -> handleCheckOut()); // mark selected book as borrowed
+      btIN.setOnAction(e -> handleCheckIn()); // mark selected book as returned
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+      // enable/disable buttons based on selection/state
+      lvBooks.getSelectionModel().selectedItemProperty().addListener(
+          (obs, oldV, newV) -> updateButtons());
+      cbBorrowers.valueProperty().addListener((obs, oldV, newV) -> updateButtons());
+      updateButtons(); // set the buttons to their correct starting state
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## I have been using JUnit4 to test the code
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## My professor, Jason Adams, instructed me after I built the initial code on how to fix some bugs.
